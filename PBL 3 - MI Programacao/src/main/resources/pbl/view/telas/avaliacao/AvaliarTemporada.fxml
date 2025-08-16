@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="415.0" prefWidth="660.0" style="-fx-background-color: #5D3A20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pbl.view.telas.avaliacao.AvaliarTemporadaController">
+    <children>
+        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#e6c091" height="365.0" layoutX="51.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 12;" width="615.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0" />
+        <ComboBox fx:id="cbTemporada" layoutX="168.17578125" layoutY="203.0" prefHeight="40.0" prefWidth="360.0" promptText="Escolha uma temporada" style="-fx-background-color: #FFEABC; -fx-border-color: #5D3A20; -fx-background-radius: 10; -fx-border-radius: 10;" stylesheets="@../../../../css/combobox.css" />
+        <Label layoutX="167.17578125" layoutY="243.0" text="Avaliação" textFill="#5d3a20">
+            <font>
+                <Font name="Impact" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="167.17578125" layoutY="162.0" text="Temporada" textFill="#5d3a20">
+            <font>
+                <Font name="Impact" size="30.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="cbAvaliacao" layoutX="168.17578125" layoutY="284.0" prefHeight="40.0" prefWidth="360.0" promptText="Selecione tipo de avaliação" style="-fx-background-color: #FFEABC; -fx-border-color: #5D3A20; -fx-background-radius: 10; -fx-border-radius: 10;" stylesheets="@../../../../css/combobox.css" />
+        <Button fx:id="btVoltar" alignment="CENTER" layoutX="43.0" layoutY="334.0" mnemonicParsing="false" onAction="#onVoltar" prefHeight="47.0" prefWidth="170.0" style="-fx-background-color: #FFEABC; -fx-border-color: #5D3A20; -fx-border-radius: 10; -fx-background-radius: 10;" text="Voltar" textAlignment="CENTER" textFill="#5d3a20">
+            <font>
+                <Font name="Impact" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="btAvaliar" alignment="CENTER" layoutX="462.0" layoutY="334.0" mnemonicParsing="false" onAction="#onAvaliar" prefHeight="47.0" prefWidth="170.0" style="-fx-background-color: #FFEABC; -fx-border-color: #5D3A20; -fx-border-radius: 10; -fx-background-radius: 10;" text="Avaliar" textAlignment="CENTER" textFill="#5d3a20">
+            <font>
+                <Font name="Impact" size="24.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="90.0" layoutY="19.0" prefHeight="69.0" prefWidth="497.0" text="Avaliar Temporada" textFill="#5d3a20" underline="true">
+            <font>
+                <Font name="Impact" size="40.0" />
+            </font>
+        </Label>
+      <ComboBox fx:id="cbSerie" layoutX="168.0" layoutY="121.0" prefHeight="40.0" prefWidth="360.0" promptText="Escolha uma série" style="-fx-background-color: #FFEABC; -fx-border-color: #5D3A20; -fx-background-radius: 10; -fx-border-radius: 10;" stylesheets="@../../../../css/combobox.css" />
+      <Label layoutX="167.0" layoutY="80.0" text="Série" textFill="#5d3a20">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

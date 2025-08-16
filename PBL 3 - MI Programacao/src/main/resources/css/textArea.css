@@ -1,0 +1,15 @@
+.text-area {
+    -fx-background-color: #FFEABC;
+    -fx-text-fill: #5D3A20;
+    -fx-font-size: 14px;
+    -fx-font-family: "Impact";
+    -fx-border-color: #5D3A20;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+}
+
+.text-area .content {
+    -fx-background-color: #FFEABC; /* FUNDO DA ÁREA DE DIGITAÇÃO */
+    -fx-background-insets: 0;
+}

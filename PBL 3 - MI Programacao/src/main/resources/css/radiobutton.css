@@ -1,0 +1,7 @@
+.radio-button .radio {
+    -fx-background-color: #5d3a20, #ffeabc;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 50%;
+    -fx-padding: 5;
+}
+

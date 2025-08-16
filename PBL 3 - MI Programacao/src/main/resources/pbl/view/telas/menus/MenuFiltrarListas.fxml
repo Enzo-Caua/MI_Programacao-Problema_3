@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="880.0" style="-fx-background-color: #5D3A20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pbl.view.telas.menus.MenuFiltrarListasController">
+   <children>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#e6c091" height="490.0" layoutX="51.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 12;" width="820.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0" />
+      <Label fx:id="btcadastro" alignment="CENTER" layoutX="225.0" layoutY="77.0" prefHeight="70.0" prefWidth="438.0" text="Filtros de Listagem" textFill="#5d3a20" underline="true">
+         <font>
+            <Font name="Impact" size="56.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="238.0" layoutY="163.0" mnemonicParsing="false" onAction="#clickCrescente" prefHeight="62.0" prefWidth="414.0" style="-fx-background-color: #E6C091; -fx-border-color: #5D3A20; -fx-border-radius: 10;" text="Ordem Crescente das Notas" textAlignment="CENTER" textFill="#5d3a20" AnchorPane.leftAnchor="238.0" AnchorPane.rightAnchor="230.79999999999995">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="238.0" layoutY="227.0" mnemonicParsing="false" onAction="#clickDecrescente" prefHeight="62.0" prefWidth="415.0" style="-fx-background-color: #E6C091; -fx-border-color: #5D3A20; -fx-border-radius: 10;" text="Ordem Decrescente das Notas" textAlignment="CENTER" textFill="#5d3a20" AnchorPane.leftAnchor="238.0" AnchorPane.rightAnchor="229.20000000000005">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="238.0" layoutY="291.0" mnemonicParsing="false" onAction="#clickGenero" prefHeight="61.0" prefWidth="414.0" style="-fx-background-color: #E6C091; -fx-border-color: #5D3A20; -fx-border-radius: 10;" text="Gênero" textAlignment="CENTER" textFill="#5d3a20" AnchorPane.leftAnchor="238.0" AnchorPane.rightAnchor="230.79999999999995">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="238.0" layoutY="354.0" mnemonicParsing="false" onAction="#clickAno" prefHeight="61.0" prefWidth="414.0" style="-fx-background-color: #E6C091; -fx-border-color: #5D3A20; -fx-border-radius: 10;" text="Ano de Lançamento" textAlignment="CENTER" textFill="#5d3a20" AnchorPane.leftAnchor="238.0" AnchorPane.rightAnchor="230.79999999999995">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btlistar" alignment="CENTER" layoutX="238.0" layoutY="418.0" mnemonicParsing="false" onAction="#clickVoltar" prefHeight="61.0" prefWidth="414.0" style="-fx-background-color: #E6C091; -fx-border-color: #5D3A20; -fx-border-radius: 10;" text="Voltar" textAlignment="CENTER" textFill="#5d3a20" AnchorPane.leftAnchor="238.0" AnchorPane.rightAnchor="230.79999999999995">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

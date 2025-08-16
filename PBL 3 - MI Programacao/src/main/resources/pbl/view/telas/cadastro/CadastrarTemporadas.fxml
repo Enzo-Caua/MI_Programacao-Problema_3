@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="415.0" prefWidth="660.0" style="-fx-background-color: #5D3A20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pbl.view.telas.cadastro.CadastrarTemporadasController">
+   <children>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#e6c091" height="365.0" layoutX="51.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 12;" width="615.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0" />
+      <Label alignment="CENTER" layoutX="80.0" layoutY="37.0" prefHeight="69.0" prefWidth="497.0" text="Cadastro de Temporadas" textFill="#5d3a20" underline="true" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0">
+         <font>
+            <Font name="Impact" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="btCadastrar" alignment="CENTER" layoutX="254.0" layoutY="332.0" mnemonicParsing="false" onAction="#cadastrarTemporada" prefHeight="15.0" prefWidth="169.0" style="-fx-background-color: #FFEABC; -fx-border-color: #5D3A20; -fx-border-radius: 10; -fx-background-radius: 10;" text="Cadastrar" textAlignment="CENTER" textFill="#5d3a20" AnchorPane.leftAnchor="254.0" AnchorPane.rightAnchor="252.0">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btVoltar" alignment="CENTER" layoutX="58.0" layoutY="332.0" mnemonicParsing="false" onAction="#clickVoltar" prefHeight="15.0" prefWidth="169.0" style="-fx-background-color: #FFEABC; -fx-border-color: #5D3A20; -fx-border-radius: 10; -fx-background-radius: 10;" text="Voltar" textAlignment="CENTER" textFill="#5d3a20" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="448.0">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Button>
+      <Group layoutX="58.0" layoutY="142.0">
+         <children>
+            <Label layoutX="4.0" prefHeight="33.0" prefWidth="222.0" text="Ano de Lançamento" textFill="#5d3a20">
+               <font>
+                  <Font name="Impact" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAno" layoutY="37.0" prefHeight="40.0" prefWidth="263.0" style="-fx-border-color: #5d3a20; -fx-background-color: #FFEABC; -fx-background-radius: 10; -fx-border-radius: 10; -fx-text-fill: #905a37;">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </TextField>
+            <ListView fx:id="lvTemporadas" layoutX="276.0" layoutY="37.0" prefHeight="137.0" prefWidth="282.0" stylesheets="@../../../../css/listview.css" />
+            <Label layoutX="4.0" layoutY="96.0" text="Quantidade de Episódios" textFill="#5d3a20">
+               <font>
+                  <Font name="Impact" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtQtdEpisodios" layoutY="133.0" prefHeight="40.0" prefWidth="263.0" style="-fx-border-color: #5d3a20; -fx-background-color: #FFEABC; -fx-background-radius: 10; -fx-border-radius: 10; -fx-text-fill: #905a37;">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="278.0" prefHeight="33.0" prefWidth="282.0" text="Temporadas Cadastradas" textFill="#5d3a20">
+               <font>
+                  <Font name="Impact" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group layoutX="255.0" layoutY="101.0" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="257.0">
+         <children>
+            <Label prefHeight="33.0" prefWidth="135.0" text="Temporada:" textFill="#5d3a20">
+               <font>
+                  <Font name="Impact" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtTempNum" layoutX="141.0" layoutY="1.0" prefHeight="33.0" prefWidth="22.0" text="_" textFill="#905a37">
+               <font>
+                  <Font name="Impact" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Button fx:id="btConcluir" alignment="CENTER" layoutX="449.0" layoutY="332.0" mnemonicParsing="false" onAction="#concluirCadastro" prefHeight="15.0" prefWidth="169.0" style="-fx-background-color: #FFEABC; -fx-border-color: #5D3A20; -fx-border-radius: 10; -fx-background-radius: 10;" text="Concluir" textAlignment="CENTER" textFill="#5d3a20">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
